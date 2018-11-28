@@ -21,6 +21,8 @@ import rosegraphics as rg
 
 
 def main():
+    draw_turtle("blue",7)
+    draw_turtle("red",6)
     """
     TESTS the functions that you will write below.
     You write the tests per the _TODO_s below.
@@ -47,7 +49,7 @@ def righttriangle(a,b):
 righttriangle(3,4)
 
 ###############################################################################
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# done: 4a.  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
@@ -73,11 +75,18 @@ righttriangle(3,4)
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
-window=rg.TurtleWindow
-
+def draw_turtle(color,a):
+    window = rg.TurtleWindow()
+    turtle = rg.SimpleTurtle('turtle')
+    turtle.pen = rg.Pen('green', a)
+    mary = rg.SimpleTurtle('turtle')
+    mary.pen = rg.Pen(color, 5)
+    turtle.forward(100)
+    mary.backward(100)
+    window.close_on_mouse_click()
 
 ###############################################################################
-# TODO: 5.
+# done: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:

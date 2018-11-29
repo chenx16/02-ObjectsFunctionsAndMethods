@@ -39,13 +39,14 @@ def main():
     turtle_fun()
 
 
-def print_math:
+def print_math():
     """ Prints some calculated values. """
-    x = math.cos(pi)
+    import math
+    x=math.cos(math.pi)
     print(x)
 
-    y = sin(pi)
-    print(The sine of PI is, y)
+    y = math.sin(math.pi)
+    print(y)
 
 
 def turtle_fun():
@@ -57,15 +58,15 @@ def turtle_fun():
     window = rg.TurtleWindow()
 
     alan = rg.SimpleTurtle()
-alan.pen = rg.Pen('blue', 30)
+    alan.pen = rg.Pen('blue', 30)
     alan.paint_bucket = rg.PaintBucket('yellow')
 
-    alan.back(3 * (47 + 16)
-    al.begin_fill()
-    alan.circle(25)
+    alan.backward(3*(47 + 16))
+    alan.begin_fill()
+    alan.draw_circle(25)
     alan.end_fill()
 
-    forward(200)
+    alan.forward(200)
 
     window.close_on_mouse_click()
 

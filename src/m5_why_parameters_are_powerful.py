@@ -26,7 +26,7 @@ def main():
     better_draw_circles(rg.Point(-100,60),3)
     better_draw_circles(rg.Point(-150,30),35)
     even_better_draw_circles(rg.Point(-250,50),5,15,'red',5)
-    even_better_draw_circles(rg.Point(0,-200),35,10,'yellow',7)
+    even_better_draw_circles(rg.Point(0,-200),35,10,'blue',7)
     window.update()
     window.close_on_mouse_click()
 

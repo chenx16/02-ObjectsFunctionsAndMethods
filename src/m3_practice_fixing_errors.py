@@ -35,13 +35,13 @@ import rosegraphics as rg
 
 def main():
     """ Calls the other functions in this module to demo them. """
-    print_math()
-    tutle_fn()
+    print_math( )
+    turtle_fun()
 
 
 def print_math:
     """ Prints some calculated values. """
-    x = cos(pi)
+    x = math.cos(pi)
     print(x)
 
     y = sin(pi)

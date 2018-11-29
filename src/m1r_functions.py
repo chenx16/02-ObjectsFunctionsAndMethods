@@ -7,6 +7,7 @@
 ###############################################################################
 
 
+
 def main():
     hello("Snow White")
     goodbye("Bashful")
@@ -28,6 +29,5 @@ def goodbye(friend):
 def hello_and_goodbye(person1, person2):
     hello(person1)
     goodbye(person2)
-
 
 main()
